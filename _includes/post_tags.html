@@ -1,0 +1,15 @@
+<div id="tag-layout">
+    <div class="tag-icon">
+        <i class="fas fa-tags"></i>
+    </div>
+    <div class="tag-contents">
+        {% if post %}
+            {% assign tags = post.tags %}
+        {% else %}
+            {% assign tags = page.tags %}
+        {% endif %}
+        {% for tag in tags %}
+            <a href="/tags/#{{tag|slugize}}">{{tag}}</a>{% unless forloop.last %},{% endunless %}
+        {% endfor %}
+    </div>
+</div>
