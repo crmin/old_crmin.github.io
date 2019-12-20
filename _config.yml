@@ -27,6 +27,8 @@ url: "https://blog.superclass.io" # the base hostname & protocol for your site, 
 # twitter_username: jekyllrb
 github_username:  crmin
 
+default_image: 
+
 # Build settings
 theme: minima
 plugins:
