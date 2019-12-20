@@ -1,4 +1,8 @@
 /* for tag cloud and archives */
+#tag-layout {
+  margin-bottom: 0.8em;
+  font-size: 0.9em;
+}
 .tag-cloud {
   list-style: none;
   padding: 0;
@@ -21,6 +25,7 @@
 }
 .tag-icon {
   display: inline;
+  color: #91c3bb;
 }
 .tag-contents {
   display: inline;
