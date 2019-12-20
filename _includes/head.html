@@ -13,7 +13,7 @@
 
   <meta name="twitter:title" content="{{ page.title }}"/>
   <meta name="twitter:description" content="{{ page.content | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}"/>
-  <meta name="twitter:image" content="{{ site.image }}"/>
+  <meta name="twitter:image" content="{{ page.image }}"/>
 
   <title>
     {% if page.title == "Home" %}
