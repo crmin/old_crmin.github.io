@@ -5,3 +5,6 @@ del {
     font-size: 0.8em;
     color: #999;
 }
+.sidebar-toggle:active:before, #sidebar-checkbox:focus ~ .sidebar-toggle:before, #sidebar-checkbox:checked ~ .sidebar-toggle:before {
+    background-image: linear-gradient(to bottom, #fff, #fff 20%, #76b5ab 20%, #76b5ab 40%, #fff 40%, #fff 60%, #76b5ab 60%, #76b5ab 80%, #fff 80%, #fff 100%);
+}
