@@ -26,7 +26,7 @@
 
     <label for="sidebar-checkbox" class="sidebar-toggle"></label>
 
-    <!-- <script src="{{ site.baseurl }}/public/js/darkmode.js"></script> -->
+    <script src="https://kit.fontawesome.com/18e3e6513c.js" crossorigin="anonymous"></script>
     <script>
       const theme = localStorage.getItem('theme');
       const userPrefers = getComputedStyle(document.documentElement).getPropertyValue('content');
@@ -36,17 +36,17 @@
       }
 
       if (theme === "dark") {
-        document.getElementById("theme-toggle").innerHTML = "Light Mode";
+        document.getElementById("theme-toggle").innerHTML = '<i class="far fa-sun"></i> Light Mode';
       } else if (theme === "light") {
-        document.getElementById("theme-toggle").innerHTML = "Dark Mode";
+        document.getElementById("theme-toggle").innerHTML = '<i class="far fa-moon"></i> Dark Mode';
       } else if  (userPrefers === "dark") {
         document.documentElement.setAttribute('data-theme', 'dark');
         window.localStorage.setItem('theme', 'dark');
-        document.getElementById("theme-toggle").innerHTML = "Light Mode";
+        document.getElementById("theme-toggle").innerHTML = '<i class="far fa-sun"></i> Light Mode';
       } else {
         document.documentElement.setAttribute('data-theme', 'light');
         window.localStorage.setItem('theme', 'light');
-        document.getElementById("theme-toggle").innerHTML = "Dark Mode";
+        document.getElementById("theme-toggle").innerHTML = '<i class="far fa-moon"></i> Dark Mode';
       }
 
       function modeSwitcher() {
@@ -54,11 +54,11 @@
         if (currentMode === "dark") {
           document.documentElement.setAttribute('data-theme', 'light');
           window.localStorage.setItem('theme', 'light');
-          document.getElementById("theme-toggle").innerHTML = "Dark Mode";
+          document.getElementById("theme-toggle").innerHTML = '<i class="far fa-moon"></i> Dark Mode';
         } else {
           document.documentElement.setAttribute('data-theme', 'dark');
           window.localStorage.setItem('theme', 'dark');
-          document.getElementById("theme-toggle").innerHTML = "Light Mode";
+          document.getElementById("theme-toggle").innerHTML = '<i class="far fa-sun"></i> Light Mode';
         }
       }
     </script>
