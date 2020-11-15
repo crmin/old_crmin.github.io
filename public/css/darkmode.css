@@ -1,0 +1,17 @@
+/* ref: https://medium.com/@derekkedziora/how-to-add-a-dark-mode-toggle-to-a-jekyll-site-a76dac00128d */
+
+
+
+html[data-theme="dark"] * {
+    color: white;
+    background-color: #353535 !important;
+}
+
+/* html[data-theme="dark"] .sidebar-toggle:active:before, #sidebar-checkbox:focus ~ .sidebar-toggle:before, #sidebar-checkbox:checked ~ .sidebar-toggle:before { */
+html[data-theme="dark"] .sidebar-toggle:active:before, html[data-theme="dark"] #sidebar-checkbox:focus ~ .sidebar-toggle:before, html[data-theme="dark"] #sidebar-checkbox:checked ~ .sidebar-toggle:before {
+    background-image: linear-gradient(to bottom, #353535, #353535 20%, #fff 20%, #fff 40%, #353535 40%, #353535 60%, #fff 60%, #fff 80%, #353535 80%, #353535 100%);
+}
+
+html[data-theme="dark"] .sidebar-toggle:before {
+    background-image: linear-gradient(to bottom, #fff, #fff 20%, #353535 20%, #353535 40%, #fff 40%, #fff 60%, #353535 60%, #353535 80%, #fff 80%, #fff 100%)
+}
